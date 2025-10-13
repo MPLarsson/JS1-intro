@@ -19,41 +19,18 @@
             <h1>JavaScript</h1>
             <p class="card-text">
                 Testing the console.log function
-                <button class="btn btn-warning font-monospace" type="button" onclick="showVariables()">Try it</button>
-                <script>
-                    function showVariables() {
-                        let name = "My name is Mattias Larsson,";
-                        let age = 32;
-                        let color = "my favourite color is Green";
-
-                        console.log("Hello World! "+name,"I'm "+age,"and "+color);
-                    }
-                </script>
+                <button class="btn btn-warning font-monospace" type="button" id="myBtn">Try it</button>
             </p>
             <p class="card-text">
                 A few calculations using variables:
             </p>
-            <button class="btn btn-warning font-monospace" type="button" onclick="showCalculations()">Calculate</button>
-            <script>
-                function showCalculations() {
-                    let x=12
-                    let y=24
-
-                    console.log(x+y);
-
-                    console.log(y-x);
-
-                    console.log(y/x);
-
-                    console.log(x*y);
-                }
-            </script>
+            <button class="btn btn-warning font-monospace" type="button" id="calculateBtn">Calculate</button>
         </div>
     </div>
     <div class="container w-50 p-3">
         <div class="card text-center shadow p-3 mb-5 bg-body-tertiary rounded">
             <div class="card-body">
-                <h2 class="card-title">Please click <span class="font-monospace">F12</span> to access the console</h2>
+                <h2 class="card-title">Press <span class="font-monospace">F12</span> to access the console</h2>
             </div>
         </div>
     </div>    

@@ -1,28 +1,30 @@
-const name = "Mattias Larsson";
-let age = "32";
-let color = "green";
-
-let x = 12;
-let y = 24;
-
 /* alert("Please click F12"); */
 
 console.log("Hello World!");
 
-/* console.log(name,age,color); */
+document.getElementById("myBtn").addEventListener("click",showVariables);
 
-/* function showVariables() {
-    let name = "My name is Mattias Larsson";
-    let age = 25;
-    let color = "My favourite color is Green";
+function showVariables() {
+    let name = "Mattias Larsson";
+    let age = 32;
+    let color = "Green";
 
-    console.log(name,age,color);
-} */
+    console.log("Hello, my name is "+name);
+    console.log("My favourite color is "+color)
+    console.log("I am "+age,"years old.")
+}
 
-console.log(x+y);
+document.getElementById("calculateBtn").addEventListener("click",showCalculations);
 
-console.log(y-x);
+function showCalculations() {
+    let x=12
+    let y=24
 
-console.log(y/x);
+    console.log(x+y);
 
-console.log(x*y);
+    console.log(y-x);
+
+    console.log(y/x);
+
+    console.log(x*y);
+}
