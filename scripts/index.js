@@ -1,9 +1,9 @@
-/* const name = "Mattias Larsson";
+const name = "Mattias Larsson";
 let age = "32";
 let color = "green";
 
 let x = 12;
-let y = 24; */
+let y = 24;
 
 /* alert("Please click F12"); */
 
