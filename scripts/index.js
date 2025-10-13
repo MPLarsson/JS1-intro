@@ -9,9 +9,9 @@ function showVariables() {
     let age = 32;
     let color = "Green";
 
-    console.log("Hello, my name is "+name);
-    console.log("My favourite color is "+color)
-    console.log("I am "+age,"years old.")
+    console.log(`Hello! My name is ${name}.`);
+    console.log(`I am ${age} years old.`)
+    console.log(`My favourite color is ${color}.`)
 }
 
 document.getElementById("calculateBtn").addEventListener("click",showCalculations);
