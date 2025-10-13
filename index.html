@@ -6,11 +6,55 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="/index.js">
     <title>Document</title>
 </head>
 <body>
 
-    
+    <div class="card text-center">
+        <div class="card-body">
+            <h1>JavaScript</h1>
+            <p class="card-text">
+                Testing the console.log function
+                <button type="button" onclick="showVariables()">Try it</button>
+                <script>
+                    function showVariables() {
+                    let name = "My name is Mattias Larsson,";
+                    let age = 32;
+                    let color = "my favourite color is Green";
+
+                    console.log(name,"I'm "+age,"and "+color);
+}
+                </script>
+            </p>
+            <p class="card-text">
+                A few calculations using variables:
+            </p>
+            <button type="button" onclick="showCalculations()">Calculate</button>
+            <script>
+                function showCalculations() {
+                    let x=12
+                    let y=24
+
+                    console.log(x+y);
+
+                    console.log(y-x);
+
+                    console.log(y/x);
+
+                    console.log(x*y);
+                }
+            </script>
+        </div>
+    </div>
+    <div class="card text-center">
+        <div class="card-body">
+            <h2 class="card-title">Please click F12 to access the console</h2>
+            <script>
+
+            </script>
+        </div>
+    </div>
     
 </body>
 </html>
