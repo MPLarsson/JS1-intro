@@ -28,3 +28,5 @@ function showCalculations() {
 
     console.log(x*y);
 }
+
+
