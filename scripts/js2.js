@@ -36,7 +36,8 @@ function pricePrompt () {
     let text = `The price is $${price}`;
     alert(text);
     document.getElementById("currentPrice").innerHTML = `$${price}`;
-    return price;
+    console.log(`The price is: $${price}`);
+    return price; /* Maybe you dont need to return the value? */
 }
 
 document.getElementById("reducedPriceBtn").addEventListener("click",priceReduction);
@@ -45,4 +46,5 @@ function priceReduction () {
     reducedPrice = price * 0.9;
     alert(`Your discount is $${reducedPrice}!`);
     document.getElementById("currentDiscount").innerHTML = `$${reducedPrice}`;
+    console.log(`The discounted price is: $${reducedPrice}`);
 }
