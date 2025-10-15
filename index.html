@@ -37,14 +37,24 @@
     </div> 
 
     <!-- JavaScript Assignment 2 -->
-    <div class="card">
+    <div class="card text-center">
         <div class="card-body text-center mt-2">
             <h2>JavaScript assignment 2</h2>
         </div>
-        <div class="card-text text-center mb-5">
+        <div class="card-text text-center mb-4">
             Choose a price to calculate:
             <button type="button" id="pricePromptBtn" class="btn btn-warning font-monospace">Price</button>
         </div>
+        <p class="font-monospace">Current price:</p>
+        <p id="currentPrice" class="card-text mb-4 font-monospace"></p>
+        <div class="card-text mb-4">
+            Click here to calculate your discounted price:
+            <button type="button" id="reducedPriceBtn" class="btn btn-warning font-monospace">Discount</button>
+        </div>
+        <p class="font-monospace">Current discount:</p>
+        <p id="currentDiscount" class="card-text font-monospace mb-4"></p>
+        
+        
     </div>
 
     <script src="/scripts/index.js"></script>
