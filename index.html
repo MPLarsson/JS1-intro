@@ -15,9 +15,9 @@
 <body>
 
     <!-- JavaScript Assignment 1 -->
-    <div class="card text-center shadow p-3 mb-5 bg-body-tertiary rounded">
+    <div class="card text-center shadow p-3 mb-5 bg-body-tertiary rounded w-50 mx-auto">
         <div class="card-body">
-            <h1>JavaScript</h1>
+            <h1 class="card-title shadow mb-5 w-50 mx-auto">JavaScript assignment 1</h1>
             <p class="card-text">
                 Testing the console.log function
                 <button class="btn btn-warning font-monospace" type="button" id="myBtn">Try it</button>
@@ -36,28 +36,44 @@
         </div>
     </div> 
 
-    <!-- JavaScript Assignment 2 -->
-    <div class="card text-center">
-        <div class="card-body text-center mt-2">
-            <h2>JavaScript assignment 2</h2>
-        </div>
+    <!-- JavaScript Assignment 2 -->   
+    <div class="card text-center shadow p-3 mb-5 bg-body-tertiary rounded w-50 mx-auto">        
+        <h2 class="card-title shadow mb-5 w-50 mx-auto">JavaScript assignment 2</h2>
         <div class="card-text text-center mb-4">
-            Choose a price to calculate:
+                Choose a price to calculate:
             <button type="button" id="pricePromptBtn" class="btn btn-warning font-monospace">Price</button>
-        </div>
-        <p class="font-monospace">Current price:</p>
+         </div>
+         <p class="font-monospace">Current price:</p>
         <p id="currentPrice" class="card-text mb-4 font-monospace"></p>
         <div class="card-text mb-4">
             Click here to calculate your discounted price:
             <button type="button" id="reducedPriceBtn" class="btn btn-warning font-monospace">Discount</button>
-        </div>
+         </div>
         <p class="font-monospace">Current discount:</p>
-        <p id="currentDiscount" class="card-text font-monospace mb-4"></p>
-        
-        
+         <p id="currentDiscount" class="card-text font-monospace mb-4"></p>            
+    </div>       
+
+    <!-- JavaScript Assignment 3 -->
+    <div class="card text-center shadow p-3 mb-5 bg-body-tertiary rounded w-50 mx-auto">
+        <div class="card-body">              
+            <h2 class="card-title shadow mb-5 w-50 mx-auto">JavaScript assignment 3</h2>          
+            <div class="mb-3">
+                <label for="usernameInput" class="form-label">Username</label>
+                <input type="text" id="usernameInput" class="form-control" placeholder="Enter username">
+            </div>
+            <div class="mb-3">
+                <label for="passwordInput" class="form-label">Password</label>
+                <input type="password" id="passwordInput" class="form-control" placeholder="Enter password">
+            </div>
+            <button id="validateBtn" class="btn btn-warning font-monospace">Validate password</button>
+            <p id="validationResult" class="mt-3 font-monospace"></p>
+        </div>
     </div>
+    
 
     <script src="/scripts/index.js"></script>
     <script src="/scripts/js2.js"></script>
+    <script src="/scripts/js3.js"></script>
+
 </body>
 </html>
