@@ -3,5 +3,11 @@ body {
     height: 100%;
     font-family: "BBH Sans Bogle", sans-serif;
     font-weight: 200;
+    letter-spacing: 1px;
     background-image: linear-gradient(rgb(150, 158, 151),rgb(115, 145, 117),rgb(35, 87, 45));
 }
+
+html {
+    /* scroll-behavior:smooth; */
+}
+
