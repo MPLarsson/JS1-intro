@@ -3,7 +3,7 @@
 -then it checks if any empty spaces exist 
 -finally if any text exist in the username, it converts password & username to lowercase and checks if they are the same 
 -if everything checks out returns a value of true*/
-function isValidInput(password, username) {
+function isValidPassword(password, username) {
 
     if (password == '' || password ==null || username == '' || username== null) return false;
 
@@ -22,7 +22,7 @@ function isValidInput(password, username) {
 /* 
 This creates and runs a function when the linked button is clicked,
 -creates username and password variables that are given value by the users input
--calls the isValidInput function to check if true or false and gives valid the resulting value
+-calls the isValidPassword function to check if true or false and gives valid the resulting value
 -creates the variable result linked to an empty <p> tag
 -if-else statement depending on the value of valid
 -the result variable linked to a <p> tag then prints the corresponding text with added styling for distinction*/
@@ -32,7 +32,7 @@ document.getElementById('validateBtn').addEventListener('click', function () {
     let password = document.getElementById('passwordInput').value;
     let valid;
 
-    if (isValidInput(password, username)==true) {
+    if (isValidPassword(password, username)==true) {
         valid = true;
     } else {
         valid = false;
