@@ -11,12 +11,12 @@ function guessNumberGame() {
 			alert(`Game cancelled. The number was ${target}.`);
 			return null;
 		}
-
+        /* Converts input-string using a Number method instead of the previously used parseFloat*/
 		const guess = Number(input);
 		attempts += 1;
 
 		/* Validate input: must be an integer between 1 and 10 */
-		if (!Number.isFinite(guess) || !Number.isInteger(guess)) {
+		if (!Number.isInteger(guess)) {
 			alert(`Please enter a whole number (e.g. 7).`);
 			continue;
 		}
